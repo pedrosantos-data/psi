@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicóloga Anna Vilaça</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3f1e3b4a60.js" crossorigin="anonymous"></script>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdf6f0;
+      color: #4a4a4a;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed; top: 0; width: 100%;
+      background: #f5e9df; padding: 1rem 2rem;
+      display: flex; justify-content: center; gap: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none; color: #4a4a4a; font-weight: 600;
+      padding: 0.5rem 1rem; border-radius: 5px;
+    }
+    nav a:hover {background: #e6d8c9; color: #2e3b3f;}
+    header {
+      text-align: center; padding: 7rem 2rem 3rem;
+      background: #f5e9df;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem; margin-bottom: 0.5rem;
+    }
+    header p {font-size: 1.2rem; color: #555;}
+    section {max-width: 1100px; margin: 4rem auto; padding: 0 2rem;}
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem; margin-bottom: 2rem; text-align: center;
+    }
+    .sobre-container {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;
+    }
+    .sobre-container img {
+      flex: 1 1 350px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .sobre-container div {
+      flex: 2 1 500px; font-size: 1rem;
+    }
+    .contato {text-align: center; margin-top: 3rem;}
+    .contato a {
+      display: inline-block; margin: 0.5rem; padding: 0.75rem 1.5rem;
+      text-decoration: none; color: white;
+      border-radius: 5px; font-weight: bold; transition: background 0.3s;
+    }
+    .instagram {background-color: #E1306C;}
+    .whatsapp {background-color: #25D366;}
+    .instagram:hover {background-color: #c02058;}
+    .whatsapp:hover {background-color: #1ea954;}
+    .fixed-whatsapp {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25D366; color: white;
+      border-radius: 50%; padding: 15px; font-size: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000; transition: transform 0.3s;
+    }
+    .fixed-whatsapp:hover {transform: scale(1.1);}
+    footer {
+      text-align: center; padding: 2rem;
+      font-size: 0.9rem; background: #f5e9df; color: #555;
+    }
+    @media (max-width: 768px) {
+      .sobre-container {flex-direction: column; text-align: center;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#trabalho">Meu Trabalho</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <header>
+    <h1>Psicóloga Anna Vilaça</h1>
+    <p>Um espaço de acolhimento, escuta e transformação.</p>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-container">
+      <img src="bg.jpg" alt="Foto de Psicóloga (exemplo)">
+      <div>
+        <p>Sou Anna Vilaça (CRP 02/31170), psicóloga clínica e escolar. Me formei pela Universidade Católica de Pernambuco e sou pós-graduanda em Clínica Psicanalítica de Orientação Lacaniana pelo Instituto ESPE.</p>
+        <p>Acredito na potência da escuta como ferramenta de transformação subjetiva. Trabalho acolhendo aquilo que muitas vezes não encontra palavras, mas insiste em se repetir em forma de sintomas, angústias ou comportamentos.</p>
+        <p>Minha atuação parte do pressuposto de que cada sujeito é único — por isso, o processo terapêutico é construído de forma singular, respeitando a história, os tempos e os sentidos de cada um.</p>
+        <p>Atendo todos os públicos, de forma presencial no Recife e também online, acolhendo pessoas de diferentes lugares e trajetórias.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalho">
+    <h2>Meu Trabalho</h2>
+    <p style="text-align:center;">Atendimento psicológico individual, infantil e de casais, de forma presencial no Recife e online em qualquer lugar do Brasil.</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <a href="https://wa.me/5581993146750" class="whatsapp" target="_blank">Fale comigo no WhatsApp</a>
+    <a href="https://www.instagram.com/annavilaca.psi" class="instagram" target="_blank">Visite meu Instagram</a>
+  </section>
+
+  <a href="https://wa.me/5581993146750" class="fixed-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    &copy; 2025 Psicóloga Anna Beatriz Vilaça Freire de Vasconcelos - Todos os direitos reservados
+  </footer>
+</body>
+</html>
