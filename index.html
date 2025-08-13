@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Vilaça | Psicóloga Clínica</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f9f0e7;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #f3e5d8;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #e0d6cc;
+            z-index: 999;
+        }
+        header nav a {
+            margin: 0 2em;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #865439;
+        }
+        section {
+            max-width: 900px;
+            margin: 6em auto 3em;
+            padding: 0 1em;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .sobre-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+        .sobre-container img {
+            max-width: 250px;
+            border-radius: 8px;
+        }
+        .carrossel {
+            text-align: center;
+            margin-top: 2em;
+        }
+        .carrossel img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 8px;
+            display: none;
+        }
+        .carrossel img.active {
+            display: block;
+        }
+        .contato {
+            text-align: center;
+            margin: 4em 0 2em;
+        }
+        .contato a {
+            margin: 0 1em;
+            font-size: 24px;
+            text-decoration: none;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 2em 0;
+            font-size: 0.9em;
+            background-color: #f3e5d8;
+        }
+        @media (max-width: 768px) {
+            .sobre-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#trabalho">Meu Trabalho</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h1>Anna Vilaça</h1>
+        <p style="text-align:center;">Psicóloga Clínica</p>
+        <div class="sobre-container">
+            <img src="psicologa.jpg" alt="Foto da Psicóloga">
+            <div>
+                <p>Sou psicóloga clínica, com atuação fundamentada na psicanálise de orientação lacaniana. Meu trabalho é voltado para crianças, adolescentes, adultos e idosos que buscam um espaço de escuta, acolhimento e elaboração do seu sofrimento.</p>
+                <p>Acredito que cada pessoa tem uma história única, e é a partir dela que construímos, juntos, um caminho possível para lidar com as dores, impasses e desafios da vida. Na psicanálise, não há respostas prontas: há a possibilidade de falar, de se ouvir e de encontrar novos sentidos para aquilo que, muitas vezes, parece sem saída.</p>
+                <p>Meu consultório é um espaço de confidencialidade, respeito e não julgamento - onde você pode se sentir seguro para ser quem é e falar sobre o que precisa.</p>
+                <p>Se você sente que é hora de cuidar de si, de olhar com mais atenção para a sua história e construir novos caminhos, será um prazer caminhar ao seu lado nesse processo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabalho">
+        <h2>Meu Trabalho</h2>
+        <div class="carrossel">
+            <img src="Clinica1.jpg" class="active">
+            <img src="Clinica2.jpg">
+            <img src="Clinica3.jpg">
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entrar em Contato</h2>
+        <a href="https://wa.me/" target="_blank">💬</a>
+        <a href="https://instagram.com/" target="_blank">📷</a>
+    </section>
+
+    <footer>
+        © 2025 Anna Vilaça. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.carrossel img');
+        setInterval(() => {
+            images[index].classList.remove('active');
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }, 3500);
+    </script>
+</body>
+</html>
